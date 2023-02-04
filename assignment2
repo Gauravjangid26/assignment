@@ -1,0 +1,378 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ffab116e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d4f8a73e",
+   "metadata": {},
+   "source": [
+    "1\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "b9dbe087",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter your mark 12\n"
+     ]
+    }
+   ],
+   "source": [
+    "m=int(input(\"Enter your mark \"))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "0088b9ce",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "you got D grade \n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "if(m>90):\n",
+    "    print(\"You got A grade\")\n",
+    "elif(m>80)and (m<=90):\n",
+    "    print(\"You got B grade\")\n",
+    "elif(m>60) and (m<=80):\n",
+    "    print(\"You got C grade\")\n",
+    "else:\n",
+    "    print(\"you got D grade \")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5e9aa5e4",
+   "metadata": {},
+   "source": [
+    "2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "c9fac34b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter cost of bike 10000\n",
+      "you got 5% tax \n"
+     ]
+    }
+   ],
+   "source": [
+    "c=int(input(\"Enter cost of bike \"))\n",
+    "\n",
+    "if(c>100000):\n",
+    "    print(\"You got 15% tax\")\n",
+    "elif(c>50000)and (m<=10000):\n",
+    "    print(\"You got 10% tax\")\n",
+    "else:\n",
+    "    print(\"you got 5% tax \")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0d0693d7",
+   "metadata": {},
+   "source": [
+    "3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "5f831dab",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the name of city agra\n"
+     ]
+    }
+   ],
+   "source": [
+    "c=input(\"Enter the name of city \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "9d095e8e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Monument is tajmahal\n"
+     ]
+    }
+   ],
+   "source": [
+    "if(c.lower()== \"delhi\"):\n",
+    "    print(\"Monument is redfort\")\n",
+    "elif(c.lower()==\"agra\"):\n",
+    "    print(\"Monument is tajmahal\")\n",
+    "elif(c.lower==\"jaipur\"):\n",
+    "    print(\"Monument is hawa mahal \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "148182cd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "c.lower()==\"agra\""
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ab13c3e6",
+   "metadata": {},
+   "source": [
+    "4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "2fe6c042",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the number 12\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=int(input(\"Enter the number \"))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "4d6e7326",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 times multiple of 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "fact=0\n",
+    "while num>10:\n",
+    "    if num%3==0:\n",
+    "        num=num/3\n",
+    "        fact+=1\n",
+    "    else:\n",
+    "        break\n",
+    "print(fact,\"times multiple of 3\")    "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7d0e3a7f",
+   "metadata": {},
+   "source": [
+    "5"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cc2399b9",
+   "metadata": {},
+   "source": [
+    "A \"While\" Loop is used to repeat a specific block of code an unknown number of times, until a condition is met. For example, if we want to ask a user for a number between 1 and 10, we don't know how many times the user may enter a larger number, so we keep asking \"while the number is not between 1 and 10\". If we (or the computer) knows exactly how many times to execute a section of code (such as shuffling a deck of cards) we use a for loop.\n",
+    "\n",
+    "=> Why While Loops?\n",
+    "\n",
+    "Like all loops, \"while loops\" execute blocks of code over and over again.\n",
+    "\n",
+    "\n",
+    "=> When\n",
+    "\n",
+    "The advantage to a while loop is that it will go (repeat) as often as necessary to accomplish its goal.\n",
+    "\n",
+    "Generic Syntax:\n",
+    "\n",
+    "            \n",
+    "  while ( condition is true )\n",
+    "    do something\n",
+    "    % Note: the \"something\" should eventually result\n",
+    "    % in the condition being false  end\n",
+    "  "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "05e17ef3",
+   "metadata": {},
+   "source": [
+    "6"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "fb37a956",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "*\n",
+      "**\n",
+      "***\n",
+      "****\n",
+      "*****\n"
+     ]
+    }
+   ],
+   "source": [
+    "#semi-rigth-pyramid\n",
+    "i=0\n",
+    "while i<5:\n",
+    "    j=0\n",
+    "    while j<i+1:\n",
+    "        print(\"*\",end=\"\")\n",
+    "        j=j+1\n",
+    "    i=i+1    \n",
+    "    print(\"\")    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "cd0ed967",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "*****\n",
+      "*****\n",
+      "*****\n",
+      "*****\n",
+      "*****\n"
+     ]
+    },
+       {
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "eaf8873f",
+   "metadata": {},
+   "source": [
+    "7"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "ed7801fa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "9\n",
+      "8\n",
+      "7\n",
+      "6\n",
+      "5\n",
+      "4\n",
+      "3\n",
+      "2\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "i=10\n",
+    "while i>0:\n",
+    "    print(i)\n",
+    "    i=i-1"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
+
+   
+   
+   
